@@ -50,11 +50,39 @@ startup
 <br>其中 P(y=1∣x) 表示给定输入特征 x 下输出为类别 y=1 的概率。
 ### 2.5训练用代码，待补充
 # 3.K近邻算法-KNN-K-Nearest Neighbors
-3.1定义：
-3.2通俗概念理解：
-3.3作用及缺陷
-3.4数学表达式
-3.5训练用代码，待补充
+### 3.1定义：K最近邻（K-Nearest Neighbors，简称KNN）算法是一种基本的分类和回归方法，常用于模式识别和数据挖掘领域。它是一种非参数化的、懒惰学习（lazy learning）的方法，意味着它不会对训练数据进行显式的建模，而是通过存储训练数据的方式进行预测。
+### 3.2通俗概念理解：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/b06f6677-6bce-4a49-90ad-12d37576caed)
+<br>做决策的时候，会先看看周围的朋友是怎么选择的
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/072ee7c8-2085-4e9c-b935-7365bda4eff1)
+<br>电影网站的推荐系统，根据已有用户的喜好，推荐新用户的喜好
+### 3.3作用及缺陷
+<br>作用：用于分类的评估矩阵，计算准确性，混淆矩阵，f统计等
+<br>优点：
+<br>  ①直观，好理解算法的逻辑
+<br>  ②只观测待测样本的局部分布，不需要估算整体
+<br>缺点：
+<br>  ①局部估算可能不符合全局的分布
+<br>  ②不能计算概率
+<br>  ③对k的取值非常敏感，不同的k会得到不同的结果
+<br>  ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/363aa4ae-ba98-4c82-aaae-c850c81cba67)
+
+### 3.4数学表达式
+<br>假设有一个包含 m 个训练样本的数据集，每个样本包含 n 个特征，表示为 X={(x1,y1),(x2,y2),...,(xm,ym)}，其中 xi 是特征向量，yi 是对应的类别标签。
+<br>给定一个新的样本 Xtest，KNN算法的基本思想是：
+<br>1. 计算新样本 xtest 与所有训练样本 xi 之间的距离，通常使用欧氏距离或其他距离度量方法。
+<br>2. 选择与新样本距离最近的 k 个训练样本。
+<br>3. 根据这 k 个样本的类别标签，通过多数表决（majority voting）或加权投票的方式，确定新样本的类别。
+<br>  KNN的数学表达式可以用以下伪代码表示：
+<br>1. 计算距离：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/7a9a8ed3-8524-4453-990c-f4331edd30e0)
+<br>其中 xtest,j 表示新样本的第 j 个特征，xi,j 表示第 i 个训练样本的第 j 个特征。
+<br>1. 选择距离最近的 k 个样本：
+<br>nearest_neighbors=argminxi distance(xtest,xi)
+<br>1. 根据最近的 k 个样本的类别，确定新样本的类别：
+<br>ypred=majority_vote({yi∣xi∈nearest_neighbors})
+<br>其中 yi 表示训练样本xi 的类别标签。
+### 3.5训练用代码，待补充
 # 4.决策树-decision tree
 4.1定义：
 4.2通俗概念理解：
