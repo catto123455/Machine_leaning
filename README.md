@@ -1,6 +1,6 @@
 # Machine_leaning
 startup
-学习参考：①gatekeeper.ai alpha  ②BiliBili五分钟机器学习
+学习参考：①gatekeeper.ai alpha  ②BiliBili：五分钟机器学习,③csdn：K同学啊
 
 # 1.线性回归-liner regression
 ### 1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
