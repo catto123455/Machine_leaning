@@ -25,10 +25,31 @@ y=β0+β1x1+β2x2+...+βnxn+ε
 # 2.逻辑回归-logistic regression
 2.1定义：
 2.2通俗概念理解：
+![image](https://github.com/catto123455/Machine_leaning/assets/140484656/2cf8a865-3c0c-4ef4-a45e-f60ea15faac5)
+根据一个学生的基本信息判断他是否是三好学生
+![image](https://github.com/catto123455/Machine_leaning/assets/140484656/6d2c32c4-cd97-41a1-b685-cc2e8d10d1ec)
+判断股票是涨还跌，买还是不买
+![image](https://github.com/catto123455/Machine_leaning/assets/140484656/336e853e-8631-44b5-9da3-245d84890a5e)
+判断病患是不是有病
 2.3作用及缺陷
-2.4数学表达式
+作用：
+①classification-分类算法，
+②表示概率p只能在0~1之间表示概率，比如0,0.3,0.99但不可以是-1，1.2等
+缺陷：只适合线性分布
+2.4数学表达式：
+特征向量 x=(x1,x2,...,xn)x=(x1,x2,...,xn)
+权重向量 w=(w1,w2,...,wn)w=(w1,w2,...,wn)
+有一个偏置项b
+逻辑回归将输入特征通过一个 sigmoid 函数映射到一个在 0 到 1 之间的概率值。
+sigmoid 函数的数学表达式如下：
+σ(z)=1/1+e^−z
+其中，z 是输入的线性组合，表示为：
+z=b+w1x1+w2x2+...+wnxn
+综合起来，逻辑回归模型的数学表达式可以写为：
+P(y=1∣x)=σ(z)=1/1+e^−z
+其中 P(y=1∣x) 表示给定输入特征 x 下输出为类别 y=1 的概率。
 2.5训练用代码，待补充
-# 3.K近邻算法-KNN
+# 3.K近邻算法-KNN-K-Nearest Neighbors
 3.1定义：
 3.2通俗概念理解：
 3.3作用及缺陷
