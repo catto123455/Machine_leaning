@@ -84,11 +84,36 @@ startup
 <br>其中 yi 表示训练样本xi 的类别标签。
 ### 3.5训练用代码，待补充
 # 4.决策树-decision tree
-4.1定义：
-4.2通俗概念理解：
-4.3作用及缺陷
-4.4数学表达式
-4.5训练用代码，待补充
+
+### 4.1定义：它是一种基于树结构的模型，可以通过一系列的规则对数据进行分类或预测。
+<br>决策树的过程：
+<br>步骤1：过滤所有可能得决策条件
+<br>步骤2：选择使子节点熵最小的决策条件（即最大熵增益）
+<br>步骤3：重复1,2，直到
+<br>1.到达了预先设置的最大树的深度
+<br>2.每个子节点的样本都属于一类
+### 4.2通俗概念理解：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/91325edd-5d58-4e8f-ad0c-41d5499d4a1b)
+<br>根据原有动物训练集的判定标准，判定待测样本羊的类别信息
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/e93cf02b-10bc-45b6-bc31-7375dd0adebd)
+<br>医疗判断有误时，可以像树一样追溯之前判断错误的信息
+### 4.3作用及缺陷
+<br>作用：迭代二分器3（ID3 ALRITHM）分类，分类和回归树[CART（classfication and regression tree）]回归
+<br>优点：
+<br>①直观，可视化，好理解
+<br>②易于追溯和倒推
+<br>缺点：
+<br>对于树的最大深度这个预制参数很敏感
+<br>深度太大，可能overfit
+<br>深度太小，可能underfit    
+### 4.4数学表达式
+<br>4.4.1如何选择最优的决策条件
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/1db32e0a-294d-462f-9363-cb2af7bc2504)
+<br>熵-entropy：衡量一个节点内的不确定性。  不确定性越高，熵越高。
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/68d16cff-57c9-4ac5-b017-2a1880930fa1)
+<br>熵的增益-entropy gain=上一层的熵 - 当前一层的熵的总和
+<br>以上为ID3 ALRITHM模型，只适用于分类问题
+### 4.5训练用代码，待补充
 # 5.聚类-decision tree
 5.1定义：
 5.2通俗概念理解：
