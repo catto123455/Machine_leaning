@@ -1,25 +1,25 @@
 # Machine_leaning
 startup
-1.线性回归-liner regression
-1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
-1.2通俗概念理解：
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/107f3170-98fd-4fb8-b24e-7a1c76643eec)
-股票的未来走向估算
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/72088859-1f30-494b-b4a2-74a88582af90)
-根据已知站位推测金发男孩的站位
-1.3作用及缺陷
-作用：分析预测数值
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/7623e59e-ef77-430b-a1f2-a2e7822006b6)
-缺陷：没有对非线性数据求解的能力
-1.4数学表达式
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/a6541224-bb93-4494-ba43-2dde4e6390ed)
+# 1.线性回归-liner regression
+# 1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
+# 1.2通俗概念理解：
+# ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/107f3170-98fd-4fb8-b24e-7a1c76643eec)
+# 股票的未来走向估算
+# ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/72088859-1f30-494b-b4a2-74a88582af90)
+# 根据已知站位推测金发男孩的站位
+# 1.3作用及缺陷
+# 作用：分析预测数值
+# ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/7623e59e-ef77-430b-a1f2-a2e7822006b6)
+# 缺陷：没有对非线性数据求解的能力
+# 1.4数学表达式
+# ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/a6541224-bb93-4494-ba43-2dde4e6390ed)
 y=Ax+b
-也可以构建更加复杂的线性回归：
-y=β0+β1x1+β2x2+...+βnxn+ε
-包含更多的属性x（也叫特征）
-例如，一个预测股价Y的任务
-属性X可能包含[时间，股票类别，上市时间]等等
-1.5训练用代码，待补充
+# 也可以构建更加复杂的线性回归：
+# y=β0+β1x1+β2x2+...+βnxn+ε
+# 包含更多的属性x（也叫特征）
+# 例如，一个预测股价Y的任务
+# 属性X可能包含[时间，股票类别，上市时间]等等
+# 1.5训练用代码，待补充
 2.逻辑回归-logistic regression
 2.1定义：
 2.2通俗概念理解：
