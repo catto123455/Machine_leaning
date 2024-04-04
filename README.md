@@ -3,52 +3,52 @@ startup
 学习参考：①gatekeeper.ai alpha  ②BiliBili五分钟机器学习
 
 # 1.线性回归-liner regression
-1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
-1.2通俗概念理解：
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/107f3170-98fd-4fb8-b24e-7a1c76643eec)
-股票的未来走向估算
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/72088859-1f30-494b-b4a2-74a88582af90)
-根据已知站位推测金发男孩的站位
-1.3作用及缺陷
-作用：分析预测数值
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/7623e59e-ef77-430b-a1f2-a2e7822006b6)
-缺陷：没有对非线性数据求解的能力
-1.4数学表达式
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/a6541224-bb93-4494-ba43-2dde4e6390ed)
-y=Ax+b
-也可以构建更加复杂的线性回归：
-y=β0+β1x1+β2x2+...+βnxn+ε
-包含更多的属性x（也叫特征）
-例如，一个预测股价Y的任务
-属性X可能包含[时间，股票类别，上市时间]等等
-1.5训练用代码，待补充
+## 1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
+## 1.2通俗概念理解：
+<br> ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/107f3170-98fd-4fb8-b24e-7a1c76643eec)
+<br>股票的未来走向估算
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/72088859-1f30-494b-b4a2-74a88582af90)
+<br>根据已知站位推测金发男孩的站位
+## 1.3作用及缺陷
+<br>作用：分析预测数值
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/7623e59e-ef77-430b-a1f2-a2e7822006b6)
+<br>缺陷：没有对非线性数据求解的能力
+## 1.4数学表达式
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/a6541224-bb93-4494-ba43-2dde4e6390ed)
+<br>y=Ax+b
+<br>也可以构建更加复杂的线性回归：
+<br>y=β0+β1x1+β2x2+...+βnxn+ε
+<br>包含更多的属性x（也叫特征）
+<br>例如，一个预测股价Y的任务
+<br>属性X可能包含[时间，股票类别，上市时间]等等
+## 1.5训练用代码，待补充
 # 2.逻辑回归-logistic regression
-2.1定义：
-2.2通俗概念理解：
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/2cf8a865-3c0c-4ef4-a45e-f60ea15faac5)
-根据一个学生的基本信息判断他是否是三好学生
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/6d2c32c4-cd97-41a1-b685-cc2e8d10d1ec)
-判断股票是涨还跌，买还是不买
-![image](https://github.com/catto123455/Machine_leaning/assets/140484656/336e853e-8631-44b5-9da3-245d84890a5e)
-判断病患是不是有病
-2.3作用及缺陷
-作用：
-①classification-分类算法，
-②表示概率p只能在0~1之间表示概率，比如0,0.3,0.99但不可以是-1，1.2等
-缺陷：只适合线性分布
-2.4数学表达式：
-特征向量 x=(x1,x2,...,xn)x=(x1,x2,...,xn)
-权重向量 w=(w1,w2,...,wn)w=(w1,w2,...,wn)
-有一个偏置项b
-逻辑回归将输入特征通过一个 sigmoid 函数映射到一个在 0 到 1 之间的概率值。
-sigmoid 函数的数学表达式如下：
-σ(z)=1/1+e^−z
-其中，z 是输入的线性组合，表示为：
-z=b+w1x1+w2x2+...+wnxn
-综合起来，逻辑回归模型的数学表达式可以写为：
-P(y=1∣x)=σ(z)=1/1+e^−z
-其中 P(y=1∣x) 表示给定输入特征 x 下输出为类别 y=1 的概率。
-2.5训练用代码，待补充
+## 2.1定义：
+## 2.2通俗概念理解：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/2cf8a865-3c0c-4ef4-a45e-f60ea15faac5)
+<br>根据一个学生的基本信息判断他是否是三好学生
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/6d2c32c4-cd97-41a1-b685-cc2e8d10d1ec)
+<br>判断股票是涨还跌，买还是不买
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/336e853e-8631-44b5-9da3-245d84890a5e)
+<br>判断病患是不是有病
+## 2.3作用及缺陷
+<br>作用：
+<br>①classification-分类算法，
+<br>②表示概率p只能在0~1之间表示概率，比如0,0.3,0.99但不可以是-1，1.2等
+<br>缺陷：只适合线性分布
+## 2.4数学表达式：
+<br>特征向量 x=(x1,x2,...,xn)x=(x1,x2,...,xn)
+<br>权重向量 w=(w1,w2,...,wn)w=(w1,w2,...,wn)
+<br>有一个偏置项b
+<br>逻辑回归将输入特征通过一个 sigmoid 函数映射到一个在 0 到 1 之间的概率值。
+<br>sigmoid 函数的数学表达式如下：
+<br>σ(z)=1/1+e^−z
+<br>其中，z 是输入的线性组合，表示为：
+<br>z=b+w1x1+w2x2+...+wnxn
+<br>综合起来，逻辑回归模型的数学表达式可以写为：
+<br>P(y=1∣x)=σ(z)=1/1+e^−z
+<br>其中 P(y=1∣x) 表示给定输入特征 x 下输出为类别 y=1 的概率。
+## 2.5训练用代码，待补充
 # 3.K近邻算法-KNN-K-Nearest Neighbors
 3.1定义：
 3.2通俗概念理解：
