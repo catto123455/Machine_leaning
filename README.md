@@ -3,8 +3,8 @@ startup
 学习参考：①gatekeeper.ai alpha  ②BiliBili五分钟机器学习
 
 # 1.线性回归-liner regression
-## 1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
-## 1.2通俗概念理解：
+### 1.1定义：线性回归是一种统计学方法，用于建立输入变量（自变量）和输出变量（因变量）之间的线性关系。
+### 1.2通俗概念理解：
 <br> ![image](https://github.com/catto123455/Machine_leaning/assets/140484656/107f3170-98fd-4fb8-b24e-7a1c76643eec)
 <br>股票的未来走向估算
 <br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/72088859-1f30-494b-b4a2-74a88582af90)
@@ -23,7 +23,7 @@ startup
 <br>属性X可能包含[时间，股票类别，上市时间]等等
 ## 1.5训练用代码，待补充
 # 2.逻辑回归-logistic regression
-## 2.1定义：
+## 2.1定义：逻辑回归是一种用于处理分类问题的统计学习方法
 ## 2.2通俗概念理解：
 <br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/2cf8a865-3c0c-4ef4-a45e-f60ea15faac5)
 <br>根据一个学生的基本信息判断他是否是三好学生
