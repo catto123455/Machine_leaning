@@ -115,11 +115,39 @@ startup
 <br>以上为ID3 ALRITHM模型，只适用于分类问题
 ### 4.5训练用代码，待补充
 # 5.聚类-decision tree
-5.1定义：
-5.2通俗概念理解：
-5.3作用及缺陷
-5.4数学表达式
-5.5训练用代码，待补充
+### 5.1定义：聚类是针对给定的样本，依据他们特征的相似度或距离，将其归并到若干个”类“或”簇“的数据分析问题。
+### 5.2通俗概念理解：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/cca75bab-9002-4ee3-a900-6e7273953804)
+<br>初入大学时学生进入不同的社团
+<br>如何定义相似？
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/04331922-e51a-477c-8c2c-b424f37ee9d1)
+<br>用两个点表示在欧式空间中的距离，距离越近，表示这两个点越相似，距离越远越不相似。
+<br>cluster，属于同一个cluster的都是一类。
+<br>Centroid for the current cluster，当前簇的中心。-训练时每增加一个样本就要变动一次簇的中心。
+<br>聚类kmeans的训练过程
+<br>1.随机从数据集中选取k个样本当做centroid
+<br>2.对于数据集中的每个点，计算它距离每个centroid的距离，并把它归为距离最近的那个cluster
+<br>3.更新centroid位置
+<br>4.重复2,3，直到centroid的位置不再改变。
+### 5.3作用及缺陷
+<br>作用：分类
+<br>优点：非监督学习类的算法不需要样本的标注信息
+<br>缺点：  
+<br>①不能利用到数据的标注信息，意味着模型的性能不如其他监督学习
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/cb84b354-b8b2-482f-8f08-f4e256e4bb24)
+<br>②对于k的取值，也就是你认为数据集中的样本应该分为几类，这个参数的设置极为敏感
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/20d965e6-d833-4a26-8eba-fb97ba4b5695)
+<br>③对于数据集本身的样本分布也很敏感
+### 5.4数学表达式
+<br>K均值（K-Means）：
+<br>假设有 n 个数据样本 x1,x2,...,xn，每个样本具有 m 个特征。
+<br>将数据集分为 k 个簇（簇的数目事先设定）。
+<br>目标是最小化每个样本与其所属簇中心点之间的距离的总和。
+<br>簇中心点用c1,c2,...,ck 表示，通过以下方式计算：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/0580aa47-4a82-4635-9640-36cda08cc374)
+<br>其中 Si 是第 i 个簇的样本集合。
+<br>然后，将每个样本分配给距离其最近的簇中心点所在的簇。
+### 5.5训练用代码，待补充
 # 6.向量支持机-SVM
 6.1定义：
 6.2通俗概念理解：
