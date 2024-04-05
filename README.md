@@ -230,11 +230,19 @@ startup
 <br>其中，H(x) 表示最终的强分类器，ht(x) 表示第 t 个基本分类器的预测结果，sign(⋅) 表示符号函数，即大于 0 返回 +1，小于 0 返回 -1，等于 0 返回 0。
 ### 8.5训练用代码，待补充
 # 9.生成对抗网络-GAN
-9.1定义：
-9.2通俗概念理解：
-9.3作用及缺陷
-9.4数学表达式
-9.5训练用代码，待补充
+### 9.1定义：生成对抗网络（Generative Adversarial Networks，简称 GANs）是一种由深度学习模型组成的生成模型，旨在生成与训练数据相似的新数据样本。GANs 由生成器（Generator）和判别器（Discriminator）组成，二者相互对抗地进行训练。
+### 9.2通俗概念理解：
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/e92614ab-8a29-4a32-9cfe-e70eaf735167)
+<br>犯罪分子印假钞vs警察侦察
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/947363bb-982d-4ddd-8c5e-183e9e1fd260)
+<br>川普唱歌的训练案例
+### 9.3作用及缺陷
+<br>作用：GANs 能够生成与训练数据相似的新数据样本，图像转换，人脸表情变化、图像修复等
+<br>优点：生成逼真样本，无监督学习
+<br>缺点：训练不稳定，由于缺乏明确的生成样本质量评价标准，需要人工评审
+### 9.4数学表达式
+<br>![image](https://github.com/catto123455/Machine_leaning/assets/140484656/c3c99fc7-8e71-4514-b05a-7c010a4b859f)
+### 9.5训练用代码，待补充
 # 10.稳定扩散模型-diffusion modle
 10.1定义：
 10.2通俗概念理解：
