@@ -1,8 +1,8 @@
-#1£©Éè¼ÆÄ£ĞÍ£¨ÊäÈëºÍÊä³öµÄ´óĞ¡£¬²»Í¬²ãµÄÇ°Ïò´«²¥£©
-#2£©¹¹ÔìËğÊ§-lossºÍÓÅ»¯Æ÷-optimizer
-#3) ÑµÁ·Ñ­»·
-# - forward pass£º¼ÆËãÔ¤²â
-# - backward psss£ºÌİ¶È
+#1ï¼‰è®¾è®¡æ¨¡å‹ï¼ˆè¾“å…¥å’Œè¾“å‡ºçš„å¤§å°ï¼Œä¸åŒå±‚çš„å‰å‘ä¼ æ’­ï¼‰
+#2ï¼‰æ„é€ æŸå¤±-losså’Œä¼˜åŒ–å™¨-optimizer
+#3) è®­ç»ƒå¾ªç¯
+# - forward passï¼šè®¡ç®—é¢„æµ‹
+# - backward psssï¼šæ¢¯åº¦
 # - update weights 
 import torch
 import torch.nn as nn
@@ -36,7 +36,7 @@ model = LinearRegration(input_size, output_size)
 print(f"Prediction before training:f(5)={model(X_test).item():.3f}")
 
 learning_rate = 0.01
-n_iters = 100   #Ïàµ±ÓÚepoch×ÜÂÖ´Î
+n_iters = 100   #ç›¸å½“äºepochæ€»è½®æ¬¡
 
 loss = nn.MSELoss()
 optimizer = torch.optim.SGD(model.parameters(),lr=learning_rate)
@@ -50,7 +50,7 @@ for epoch in range(n_iters):
 
     # gradient = backward pass
     l.backward()   
-    # dl/dw  pytorch×Ô¼º»áÍê³ÉËùÓĞµÄ¼ÆËã£¬µ÷ÓÃ¼´¿É
+    # dl/dw  pytorchè‡ªå·±ä¼šå®Œæˆæ‰€æœ‰çš„è®¡ç®—ï¼Œè°ƒç”¨å³å¯
 
     # update weights
     optimizer.step()
@@ -59,7 +59,7 @@ for epoch in range(n_iters):
     # zero gradients
     optimizer.zero_grad()
 
-    if epoch % 10 == 0:      #Ã¿¶àÉÙ²½Êä³öÒ»´Î
+    if epoch % 10 == 0:      #æ¯å¤šå°‘æ­¥è¾“å‡ºä¸€æ¬¡
         [w, b] = model.parameters()
         print(f"epoch {epoch+1}: w = {w[0][0].item():.3f}, loss = {l:.8f}")
 
