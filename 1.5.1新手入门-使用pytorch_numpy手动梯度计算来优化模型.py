@@ -1,4 +1,4 @@
-#Ê¹ÓÃÌİ¶ÈÏÂ½µËã·¨ÓÅ»¯º¯Êı
+#ä½¿ç”¨æ¢¯åº¦ä¸‹é™ç®—æ³•ä¼˜åŒ–å‡½æ•°
 import numpy as np
 
 # f = w * x
@@ -16,19 +16,19 @@ def forward(x):
     return w * x
 # loss
 def loss(y, y_predicted):
-    return((y_predicted - y)**2).mean()      #mean()ÊÇ¾ùÖµÔËËã
+    return((y_predicted - y)**2).mean()      #mean()æ˜¯å‡å€¼è¿ç®—
 
 # gradient
 # MSE = 1/N * (w*x-y)**2
 # dj/dw =1/N 2x(w*x-y)
 
-#def gradient(x,y,y_predicted):        #ÊÖ¶¯¼ÆËãµÄÌİ¶È
+#def gradient(x,y,y_predicted):        #æ‰‹åŠ¨è®¡ç®—çš„æ¢¯åº¦
 #    return np.dot(2*x, y_predicted - y).mean()
 
 print(f"Prediction before training:f(5)={forward(5):.3f}")
 
 learning_rate = 0.01
-n_iters = 20   #Ïàµ±ÓÚepoch
+n_iters = 20   #ç›¸å½“äºepoch
 
 for epoch in range(n_iters):
     # prediction = forward pass
@@ -38,7 +38,7 @@ for epoch in range(n_iters):
     l = loss(Y, y_pred)
 
     # gradient = backward pass
-    l.backward() # dl/dw  pytorch×Ô¼º»áÍê³ÉËùÓĞµÄ¼ÆËã£¬µ÷ÓÃ¼´¿É
+    l.backward() # dl/dw  pytorchè‡ªå·±ä¼šå®Œæˆæ‰€æœ‰çš„è®¡ç®—ï¼Œè°ƒç”¨å³å¯
 
     # update weights
     with torch.no_grad():
